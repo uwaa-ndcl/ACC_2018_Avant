@@ -1,0 +1,18 @@
+[(c1*(da1 + db1 + ch*ct*ds - dt*sh)^2 + c1*(da2 + db2 + ch*ct*ds - dt*sh)^2 + c1*(da3 + db3 + ch*ct*ds - dt*sh)^2 + c1*(da4 + db4 + ch*ct*ds - dt*sh)^2)*(sh*ss + ch*cs*st); 
+(c1*(da1 + db1 + ch*ct*ds - dt*sh)^2 + c1*(da2 + db2 + ch*ct*ds - dt*sh)^2 + c1*(da3 + db3 + ch*ct*ds - dt*sh)^2 + c1*(da4 + db4 + ch*ct*ds - dt*sh)^2)*(-(cs*sh) + ch*ss*st); 
+ch*ct*(c1*(da1 + db1 + ch*ct*ds - dt*sh)^2 + c1*(da2 + db2 + ch*ct*ds - dt*sh)^2 + c1*(da3 + db3 + ch*ct*ds - dt*sh)^2 + c1*(da4 + db4 + ch*ct*ds - dt*sh)^2); 
+-(c1*ca3*ct*d3*sh*(da3 + db3 + ch*ct*ds - dt*sh)^2) - c1*ca4*ct*d4*sh*(da4 + db4 + ch*ct*ds - dt*sh)^2 + ch*ct*(c2*(da1 + db1 + ch*ct*ds - dt*sh)^2 - c2*(da2 + db2 + ch*ct*ds - dt*sh)^2 + c2*(da3 + db3 + ch*ct*ds - dt*sh)^2 - c2*(da4 + db4 + ch*ct*ds - dt*sh)^2) - c1*d3*sa3*(da3 + db3 + ch*ct*ds - dt*sh)^2*st - c1*d4*sa4*(da4 + db4 + ch*ct*ds - dt*sh)^2*st - c1*d1*(da1 + db1 + ch*ct*ds - dt*sh)^2*(ca1*ct*sh + sa1*st) - c1*d2*(da2 + db2 + ch*ct*ds - dt*sh)^2*(ca2*ct*sh + sa2*st); 
+sh*(-(c2*(da1 + db1 + ch*ct*ds - dt*sh)^2) + c2*(da2 + db2 + ch*ct*ds - dt*sh)^2 - c2*(da3 + db3 + ch*ct*ds - dt*sh)^2 + c2*(da4 + db4 + ch*ct*ds - dt*sh)^2) - ch*(c1*ca1*d1*(da1 + db1 + ch*ct*ds - dt*sh)^2 + c1*ca2*d2*(da2 + db2 + ch*ct*ds - dt*sh)^2 + c1*ca3*d3*(da3 + db3 + ch*ct*ds - dt*sh)^2 + c1*ca4*d4*(da4 + db4 + ch*ct*ds - dt*sh)^2); 
+c1*d1*sa1*(da1 + db1 + ch*ct*ds - dt*sh)^2 + c1*d2*sa2*(da2 + db2 + ch*ct*ds - dt*sh)^2 + c1*d3*sa3*(da3 + db3 + ch*ct*ds - dt*sh)^2 + c1*d4*sa4*(da4 + db4 + ch*ct*ds - dt*sh)^2; 
+c2*(da1 + db1 + ch*ct*ds - dt*sh)^2 + ta1; 
+-(c2*(da2 + db2 + ch*ct*ds - dt*sh)^2) + ta2; 
+c2*(da3 + db3 + ch*ct*ds - dt*sh)^2 + ta3; 
+-(c2*(da4 + db4 + ch*ct*ds - dt*sh)^2) + ta4; 
+fd1; 
+fd2; 
+fd3; 
+fd4; 
+c2*(da1 + db1 + ch*ct*ds - dt*sh)^2 + tb1; 
+-(c2*(da2 + db2 + ch*ct*ds - dt*sh)^2) + tb2; 
+c2*(da3 + db3 + ch*ct*ds - dt*sh)^2 + tb3; 
+-(c2*(da4 + db4 + ch*ct*ds - dt*sh)^2) + tb4];
