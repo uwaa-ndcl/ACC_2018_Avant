@@ -8,25 +8,21 @@ Trevor Avant, Unsik Lee, Brian Katona & Kristi Morgansen, *American Control Conf
 
 ## code
 
-All code is written in Mathematica and Matlab.
+All code is written in Mathematica (11.0) and Matlab (2018b).
 
-## dynamics (Section II)
+### dynamics (Section II)
 * **dynamics derivation**: run `mathematica/dynamics.nb`
   * *Note:* This will output 3 text files: `M.txt`, `h.txt`, and `Q.txt`. The contents of these files are intended to be copied into the Matlab dynamics file `dx.m`. This has already been done, so it is not necessary to run the .nb file again. Additionally, running this file may take a long time.
 
 
-## hover configurations (Section III)
-* **hover recovery simulation**: see `mathematica/equilibrium_math.nb`
+### hover configurations (Section III)
+* **hover recovery simulation**: analysis is contained in `mathematica/equilibrium_math.nb`
 
-## rotor failure restabilization (Section IV)
+### rotor failure restabilization (Section IV)
 
 * **system overview diagrams (Figures 1 & 2)**: run `matlab/plot/plot_overview_diagrams.m`
 
 * **hover recovery simulation (Figures 3 & 4)**: run `matlab/hover_recovery.m`
-  * *Note*: After running this file, you can generate plots by running some of the commented lines in the `%% plots` code section:
-  * **Figure 3**: run `plot_snapshots(X,T,T_snapshots,const);`
-  * **Figure 4**: run `plot_x_u(T,X,U);`
-  * **animation**: run `animate_quadrotor(T,X,const);`
 
 * **region of attraction (Figure 5)**: run `matlab/region_of_attraction.m`
   * *Note*: This may take awhile. As an alternative, you can go to the bottom of the file and load previous results by running the commented line: `load region_of_attraction_results.mat`. Then, you can generate the plot by manually running the remaining lines of `region_of_attraction.m`.
