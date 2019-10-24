@@ -26,7 +26,7 @@ zlim([zmin - max_d - 2*const.ar - extra, zmax + max_d + 2*const.ar + extra]);
 
 % set the perspective of the 3D plot
 az = 45;
-el = 25+15;
+el = 25;
 view(az, el);
 
 % make an animation by drawing the quadrotor at each time
@@ -40,7 +40,7 @@ for i=1:size(X,2)
         % remember to pause before first frame & maximize the figure window
         current_dir = pwd; % in Windows
         file_name_i = strcat(current_dir,'\test\ani_',num2str(i,'%03.f'));
-        print('-opengl','-dpng','-r600',file_name_i);
+        print('-opengl','-dpng','-r300',file_name_i);
 
         % create a file whose title is the frame rate
         fr = 1/(T(2)-T(1)); % frame rate of T and X

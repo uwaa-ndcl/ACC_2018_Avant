@@ -1,14 +1,16 @@
 # Dynamics, Hover Configurations, and Rotor Failure Restabilization of a Morphing Quadrotor
 
+![alt text](videos/animation_pt175.gif)
+
 This is the code for the paper
 
-[*Dynamics, Hover Configurations, and Rotor Failure Restabilization of a Morphing Quadrotor*](https://ieeexplore.ieee.org/document/8431628)
+[**Dynamics, Hover Configurations, and Rotor Failure Restabilization of a Morphing Quadrotor**](https://ieeexplore.ieee.org/document/8431628)
 
 Trevor Avant, Unsik Lee, Brian Katona & Kristi Morgansen, *American Control Conference (ACC) 2018*
 
 ## code
 
-All code is written in Mathematica (11.0) and Matlab (2018b).
+The code is written in Mathematica (11.0) and Matlab (2018b).
 
 ### dynamics (Section II)
 * **dynamics derivation**: run `mathematica/dynamics.nb`
@@ -27,7 +29,7 @@ All code is written in Mathematica (11.0) and Matlab (2018b).
 * **region of attraction (Figure 5)**: run `matlab/region_of_attraction.m`
   * *Note*: This may take awhile. As an alternative, you can go to the bottom of the file and load previous results by running the commented line: `load region_of_attraction_results.mat`. Then, you can generate the plot by manually running the remaining lines of `region_of_attraction.m`.
 
-# extras
+## extras
 
 * **calculation of the thrust and torque coefficients**: is explained in `matlab/propeller_calculations/propeller_coefficients_calculation.m`
 
@@ -37,8 +39,8 @@ All code is written in Mathematica (11.0) and Matlab (2018b).
 * **dynamics tests**: to test dynamics of the quadrotor for different initial conditions and/or control laws, run
 `matlab/test_dynamics.m`
 
-# notes
+## notes
 
-* In this code, we use Matlab's `lqr` command. While this command works for our system in prior versions of Matlab, it no longer works for versions 2019a or later (this is due to the poor scaling of our system). So, if this code is run in versions 2019a or later, instead of re-running the `lqr` command, our code will load previous LQR results from the `matlab/saved_results/lqr_results.mat` file.
+* Our system is poorly scaled, which makes computing an LQR gain numerically challenging. In our code, we use Matlab's `lqr` command, which will work for our system in versions of Matlab prior to 2019a. It does not work in later versions because Matlab changed their `lqr` algorithm. So, if this code is run in version 2019a or later, instead of re-running the `lqr` command, our code will automatically load previous LQR results from the `matlab/saved_results/lqr_results.mat` file.
 
 * There is a small error in Fig. 5. Our choice of Euler angles has singularities at theta = +/- pi/2 (not phi = +/- pi/2), so the blue lines should be vertical.
