@@ -1,6 +1,6 @@
 # Dynamics, Hover Configurations, and Rotor Failure Restabilization of a Morphing Quadrotor
 
-![alt text](videos/animation_pt175.gif)
+![alt text](videos/animation_pt175_2k.gif)
 
 This is the code for the paper
 
